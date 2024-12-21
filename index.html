@@ -16,6 +16,7 @@
                 <li><a href="#leaderboard">Leaderboard</a></li>
                 <li><a href="#login">Login</a></li>
             </ul>
+            <button id="themeToggle">🌙</button>
         </nav>
     </header>
     
@@ -27,18 +28,24 @@
 
     <section id="challenges">
         <h2>Challenges</h2>
-        <p>Explore our beginner, intermediate, and advanced hacking challenges.</p>
-        <ul>
-            <li>SQL Injection</li>
-            <li>Cross-Site Scripting (XSS)</li>
-            <li>Password Cracking</li>
-        </ul>
+        <div id="challenges-container"></div>
+        <button id="loadMore">Load More Challenges</button>
     </section>
 
     <section id="leaderboard">
         <h2>Leaderboard</h2>
-        <p>See the top ethical hackers.</p>
-        <!-- Placeholder for future leaderboard -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Name</th>
+                    <th>Score</th>
+                </tr>
+            </thead>
+            <tbody id="leaderboard-data">
+                <!-- Leaderboard data will be dynamically added -->
+            </tbody>
+        </table>
     </section>
 
     <footer>
